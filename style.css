@@ -163,7 +163,7 @@ ul {
 }
 
 .kunden-überschrift {
-  font-size: 1.8em;
+  font-size: 1.6em;
   margin-bottom: 20px;
   color: #333;
 }
@@ -174,10 +174,11 @@ ul {
   justify-content: center;
   gap: 20px 50px;
   align-items: center;
-  padding: 30px 20px;
+  padding: 20px 20px 10px 20px; /* angepasst: weniger Platz unten */
   background-color: #f9f9f9;
   border-top: 1px solid #ccc;
 }
+
 
 .logo-leiste img {
   height: 40px;
@@ -195,7 +196,7 @@ ul {
 @media (max-width: 500px) {
   .logo-leiste img {
     height: 30px;
-    max-width: 80px;
+    max-width: 40px;
   }
 }
 
