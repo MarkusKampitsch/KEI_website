@@ -45,9 +45,9 @@ nav a {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Hier auf flex-start ändern, um nach oben zu rücken */
   align-items: center;
-  padding: 0 20px;
+  padding-top: 50px;
 }
 
 .hero-container .logo {
@@ -61,6 +61,7 @@ nav a {
   color: rgb(37, 26, 26);
   text-align: center;
   word-wrap: break-word;
+  line-height: 1.2; /* Zeilenabstand verkleinern */
 }
 
 .hero-container p {
@@ -146,7 +147,7 @@ footer {
 /* Allgemeine Section-Formatierung */
 section {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 20px;
 }
 
