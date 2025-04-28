@@ -39,7 +39,7 @@ nav a {
 /* Hero-Bereich */
 .hero-container {
   position: relative;
-  background-image: url('bilder/hintergrund.jpg');
+  background-image: url('bilder/hintergrund_trprt.jpg');
   background-size: cover;
   background-position: center center;
   height: 100vh;
