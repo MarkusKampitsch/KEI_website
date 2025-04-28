@@ -118,11 +118,11 @@ footer {
 /* Responsive Anpassungen für kleinere Bildschirme */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   header p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .profilbild {
