@@ -1,233 +1,243 @@
 /* Grundlegendes Styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  /* Header-Stil */
-  header {
-    background-color: #004080; /* Dunkler Hintergrund */
-    color: white;
-    padding: 0; /* Kein zusätzlicher Abstand am Header */
-    text-align: center;
-  }
-  
-  /* Logo im Header */
-  .logo {
-    width: 400px;
-    display: block;
-    margin: 0 auto;
-    background-color: none;
-      }
-  
-  /* Navigation */
-  nav {
-    background-color: #003060;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  /* Hero-Bereich */
-  .hero-container {
-    position: relative;
-    background-image: url('bilder/hintergrund.jpg'); /* Dein Bild-Pfad */
-    background-size: cover;
-    background-position: center center;
-    height: 100vh; /* Hero-Bereich nimmt volle Höhe des Viewports ein */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Verschiebt die Inhalte nach oben */
-    align-items: center;
-    padding-top: 50px; /* Abstand für das Logo und den Titel */
-  }
-  
-  /* Logo im Hero-Bereich */
-  .hero-container .logo {
-    max-width: 300px; /* Logo nicht zu groß */
-    margin-bottom: 20px;
-  }
-  
-  /* Titel und Text im Hero-Bereich */
-  .hero-container h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: rgb(37, 26, 26); /* Weiße Schriftfarbe für den Titel */
-  }
-  
-  .hero-container p {
-    font-size: 1.25rem;
-    margin-bottom: 30px;
-    color: rgb(32, 18, 18); /* Weiße Schriftfarbe für den Text */
-  }
-  
-  /* Call-to-Action Button */
-  .cta-button {
-    padding: 12px 24px;
-    background-color: #00b300; /* Grün für den Button */
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    /* position: absolute; /* Absolute Positionierung */
-    /* bottom: 100px; /* Button bleibt immer 30px vom unteren Rand entfernt */
-  }
-  
-  .cta-button:hover {
-    background-color: #008000; /* Buttonfarbe ändert sich bei Hover */
-  }
-  
-  /* Sektion unter dem Header */
-  .about {
-    background-image: url('bilder/dein-hintergrundbild-2.jpg'); /* Neues Bild für diese Sektion */
-    background-size: cover;
-    background-position: center center;
-    padding: 60px 20px;
-    color: black;
-    text-align: center;
-  }
-  
-  /* Fußzeile */
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ddd;
-  }
-  
-  /* Profilbild Styling */
-  .profilbild {
-    width: 180px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Responsive Anpassungen für kleinere Bildschirme */
-  @media (max-width: 600px) {
-    header h1 {
-      font-size: 24px;
-    }
-  
-    header p {
-      font-size: 14px;
-    }
-  
-    .profilbild {
-      width: 120px;
-    }
-  
-    section {
-      padding: 10px;
-    }
-  
-    .cta-button {
-      width: 100%;
-      font-size: 16px;
-    }
-  }
-  section {
-    text-align: center; /* Zentriert den gesamten Text im Abschnitt */
-    margin-bottom: 30px; /* Fügt Abstand zwischen den Abschnitten hinzu */
-    padding: 20px; /* Optional: sorgt für etwas Abstand innen */
-  }
-  
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 15px; /* Fügt Abstand unter der Überschrift hinzu */
-  }
-  
-  p {
-    font-size: 1.2rem;
-  }
-  ul {
-    list-style-position: inside; /* Bullets nach innen verschieben */
-    text-align: center;          /* Text zentrieren */
-    padding-left: 0;             /* Standard-Einzug entfernen */
-  }
-  .logo-leiste {
-    display: flex;
-    flex-wrap: wrap; /* Logos umbrechen bei kleineren Bildschirmen */
-    justify-content: center;
-    align-items: center;
-    gap: 20px 50px; /* vertikaler & horizontaler Abstand */
-    padding: 30px 20px;
-    background-color: #f9f9f9;
-    border-top: 1px solid #ccc;
-  }
-  
-  .logo-leiste img {
-    height: 40px;
-    max-width: 150px; /* begrenzt Breite bei sehr breiten Bildern */
-    object-fit: contain;
-    transition: transform 0.2s ease;
-    flex-shrink: 0;
-  }
-  
-  .logo-leiste img:hover {
-    transform: scale(1.05); /* kleiner Hover-Effekt */
-  }
-  /* Optional: kleinere Logos bei sehr kleinen Geräten */
-@media (max-width: 500px) {
-    .logo-leiste img {
-      height: 30px;
-      max-width: 80px;
-    }
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header-Stil */
+header {
+  background-color: #004080; /* Dunkler Hintergrund */
+  color: white;
+  padding: 0;
+  text-align: center;
+}
+
+/* Logo im Header */
+.logo {
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+  background-color: #003060;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero-Bereich */
+.hero-container {
+  position: relative;
+  background-image: url('bilder/hintergrund.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.hero-container .logo {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.hero-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: rgb(37, 26, 26);
+}
+
+.hero-container p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: rgb(32, 18, 18);
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  padding: 12px 24px;
+  background-color: #00b300;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #008000;
+}
+
+/* Sektion unter dem Header */
+.about {
+  background-image: url('bilder/dein-hintergrundbild-2.jpg');
+  background-size: cover;
+  background-position: center center;
+  padding: 60px 20px;
+  color: black;
+  text-align: center;
+}
+
+/* Fußzeile */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ddd;
+}
+
+/* Profilbild Styling */
+.profilbild {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Anpassungen für kleinere Bildschirme */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
   }
 
-  /* Formatierung für Seiten mit der Klasse text-page (z. B. Impressum und Datenschutzerklärung) */
+  header p {
+    font-size: 14px;
+  }
+
+  .profilbild {
+    width: 120px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  .cta-button {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+/* Allgemeine Section-Formatierung */
+section {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style-position: inside;
+  text-align: center;
+  padding-left: 0;
+}
+
+/* Logo-Leiste (bisherige Kunden) */
+.kunden-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.kunden-überschrift {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.logo-leiste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 50px;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+}
+
+.logo-leiste img {
+  height: 40px;
+  max-width: 150px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.logo-leiste img:hover {
+  transform: scale(1.05);
+}
+
+/* Optional: kleinere Logos bei sehr kleinen Geräten */
+@media (max-width: 500px) {
+  .logo-leiste img {
+    height: 30px;
+    max-width: 80px;
+  }
+}
+
+/* Formatierung für Impressum und Datenschutzerklärung */
 .text-page {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  /* Überschrift des Impressums oder der Datenschutzerklärung */
-  .text-page h1 {
-    font-size: 2rem;
-    color: #004080;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Überschrift der Unterkategorien */
-  .text-page h2 {
-    font-size: 1.6rem;
-    color: #004080;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  /* Absätze innerhalb der Seiten */
-  .text-page p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    color: #555;
-  }
-  
-  /* Fußzeile für rechtliche Hinweise */
-  .text-page footer {
-    font-size: 0.9rem;
-    text-align: center;
-    margin-top: 40px;
-    color: #777;
-  }
-  .language-switcher {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.text-page h1 {
+  font-size: 2rem;
+  color: #004080;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-page h2 {
+  font-size: 1.6rem;
+  color: #004080;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.text-page p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.text-page footer {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+}
+
+/* Sprache-Umschalter */
+.language-switcher {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -244,8 +254,10 @@ body {
 .language-switcher img:hover {
   transform: scale(1.1);
 }
+
+/* Liste bei Leistungen */
 #leistungen ul {
-  list-style-type: disc; /* kleine Punkte vor den Einträgen */
-  font-size: 1.2em; /* gleiche Schriftgröße wie sonst */
-  padding-left: 20px; /* etwas Einrückung */
+  list-style-type: disc;
+  font-size: 1.2em;
+  padding-left: 20px;
 }
