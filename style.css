@@ -40,7 +40,7 @@ nav a {
 .hero-container {
   position: relative;
   background-image: url('bilder/hintergrund.jpg');
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   height: 100vh;
   display: flex;
@@ -59,26 +59,13 @@ nav a {
   font-size: 3rem;
   margin-bottom: 20px;
   color: rgb(37, 26, 26);
-  word-wrap: break-word; /* Sorgt dafür, dass lange Wörter auf mobilen Geräten umgebrochen werden */
-  hyphens: auto; /* Kann das automatische Trennen von Wörtern bei Bedarf aktivieren */
 }
 
 .hero-container p {
   font-size: 1.25rem;
   margin-bottom: 30px;
   color: rgb(32, 18, 18);
-  word-wrap: break-word; /* Umbrüche bei langen Wörtern */
 }
-/* Für kleinere Bildschirmgrößen, z.B. Smartphones */
-@media (max-width: 600px) {
-  .hero-container h1 {
-    font-size: 2.5rem; /* Kleinere Schriftgröße für Mobilgeräte */
-  }
-  .hero-container p {
-    font-size: 1rem; /* Passen der Schriftgröße an */
-  }
-}
-
 
 /* Call-to-Action Button */
 .cta-button {
@@ -98,7 +85,7 @@ nav a {
 /* Sektion unter dem Header */
 .about {
   background-image: url('bilder/dein-hintergrundbild-2.jpg');
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   padding: 60px 20px;
   color: black;
@@ -274,14 +261,4 @@ ul {
   list-style-type: disc;
   font-size: 1.2em;
   padding-left: 20px;
-}
-@media (max-width: 600px) {
-  .cta-button {
-    width: 100%; /* Schaltflächen auf mobilen Geräten breiter machen */
-    font-size: 16px;
-  }
-
-  .logo {
-    max-width: 250px; /* Logo etwas kleiner auf mobilen Geräten */
-  }
 }
