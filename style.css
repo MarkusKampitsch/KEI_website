@@ -246,6 +246,6 @@ body {
 }
 #leistungen ul {
   list-style-type: disc; /* kleine Punkte vor den Einträgen */
-  font-size: 1em; /* gleiche Schriftgröße wie sonst */
+  font-size: 1.2em; /* gleiche Schriftgröße wie sonst */
   padding-left: 20px; /* etwas Einrückung */
 }
