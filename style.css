@@ -271,3 +271,10 @@ ul {
   font-size: 1.2em;
   padding-left: 20px;
 }
+address {
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 20px 0;
+  color: #333;
+}
