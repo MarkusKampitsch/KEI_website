@@ -205,8 +205,8 @@ ul {
 /* Optional: kleinere Logos bei sehr kleinen Geräten */
 @media (max-width: 500px) {
   .logo-leiste img {
-    height: 50px;
-    max-width: 80px;
+    height: 70px;
+    max-width: 100px;
   }
 }
 
