@@ -40,11 +40,13 @@
       <li>Fahrzeugintegration und Testprogramme</li>
       <li>Technologiebewertung und Szenariobewertungen <br> 
         (z.B. netzunabhängige Stromversorgung, Anwendungen mit geringer Signatur usw.)</li>
+      <li>(Pre-)FEED, FEED, EPC(m) Support </li>
+      <li>Unterstützung bei Vergabepozessen und Aussschreibungen</li>
       <li>Risikoanalyse / HAZOP</li>
       <li>Techno-Economic Assessments (TEA)</li>
       <li>Technische Due Diligence (TDD)</li>
       <li>Begleitung von Förderprojekten</li>
-      <li>Unterstützung bei Vergabepozessen und Aussschreibungen</li>
+
       <li>H2-Schulungen</li>
     </ul>
   </div>
@@ -119,6 +121,34 @@
     <img src="bilder/winkelmann_logo.png" alt="Logo 7">
     <img src="bilder/Verne_logo.svg" alt="Logo 8">
   </div>
+
+
+  <div class="testimonial-wrapper">
+    <h3 class="kunden-überschrift">Was Kunden sagen</h3>
+    <div id="testimonial-carousel" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <blockquote>
+              “Markus provided immense value across various project areas, from technical hydrogen refueling deliverables, to customer outreach and company strategy initiatives. 
+              [...] We at Verne cannot recommend him enough. We look forward to working with him on more occasions”
+              <footer>– David Jaramillo, CTO at Verne -</footer>
+            </blockquote>
+          </li>
+          <!-- <li class="splide__slide">
+            <blockquote>
+              “Professional, fast, and reliable – KEI GmbH is our trusted engineering partner in every project phase.”
+              <footer>– John Smith, Program Manager at AeroFuture GmbH</footer>
+            </blockquote>
+          </li>
+           Weitere Testimonials bei Bedarf -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+
 </section>
 
   
@@ -129,6 +159,23 @@
     </p>
   </footer> 
 
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#testimonial-carousel', {
+        type: 'loop',
+        autoplay: true,
+        interval: 6000,
+        arrows: false,
+        pagination: true,
+        pauseOnHover: true,
+      }).mount();
+    });
+  </script>
+  
 
 </body>
 </html>
