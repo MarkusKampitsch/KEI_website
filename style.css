@@ -210,6 +210,45 @@ ul {
   }
 }
 
+
+.member-leiste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px 50px;
+  align-items: center;
+  padding: 0px 20px 50px 20px; /* angepasst: weniger Platz unten */
+   
+}
+
+.member-leiste img {
+  height: 40px;
+  max-width: 150px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.member-leiste img:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Formatierung für Impressum und Datenschutzerklärung */
 .text-page {
   font-family: Arial, sans-serif;
