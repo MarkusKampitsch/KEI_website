@@ -115,6 +115,18 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.highlight {
+  color: #0f396e;
+  font-weight: bold;
+}
+
+.ueber-mich-inhalt {
+  max-width: 1000px;     /* maximale Breite */
+  margin: 0 auto;        /* zentriert horizontal */
+  padding: 0 20px;       /* Innenabstand für kleinere Displays */
+  text-align: center;      /* optional: linksbündiger Text statt zentriert */
+}
+
 /* Responsive Anpassungen für kleinere Bildschirme */
 @media (max-width: 600px) {
   header h1 {
@@ -289,13 +301,13 @@ ul {
 /* Sprache-Umschalter */
 .language-switcher {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 30px;
   z-index: 9999;
 }
 
 .language-switcher img {
-  width: 30px;
+  width: 40px;
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
