@@ -22,6 +22,22 @@
 
 
 </head>
+
+<script>
+  // Google Analytics Opt-Out
+  function gaOptOut() {
+    document.cookie = "ga-disable-G-S6K5V46G2E=true; path=/; expires=Fri, 31 Dec 2099 23:59:59 GMT";
+    alert("Google Analytics wurde deaktiviert.");
+  }
+
+  // Prüfung, ob Opt-Out-Cookie gesetzt ist
+  if (document.cookie.indexOf("ga-disable-G-S6K5V46G2E=true") > -1) {
+    window['ga-disable-G-S6K5V46G2E'] = true;
+  }
+</script>
+
+
+
 <body>
 
   <!-- Header mit Hero-Bereich -->
