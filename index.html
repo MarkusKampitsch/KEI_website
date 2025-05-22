@@ -7,51 +7,33 @@
   <link rel="stylesheet" href="style.css">
 
 <!-- Google Analytics 4 – DSGVO-konform mit IP-Anonymisierung -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S6K5V46G2E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
 
-  gtag('js', new Date());
 
-  gtag('config', 'G-S6K5V46G2E', {
-    'anonymize_ip': true,      // IP-Anonymisierung aktivieren
-    'cookie_flags': 'SameSite=None;Secure'
-  });
-</script>
+
 
 <script>
+
   function loadAnalytics() {
+    if (window.gaInitialized) return; // Mehrfachladen verhindern
+    window.gaInitialized = true;
+
     const gtagScript = document.createElement('script');
     gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-S6K5V46G2E';
     gtagScript.async = true;
     document.head.appendChild(gtagScript);
 
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag; // global verfügbar machen
+
     gtag('js', new Date());
     gtag('config', 'G-S6K5V46G2E', {
       'anonymize_ip': true
     });
   }
-</script>
 
+</script>
 </head>
-
-<script>
-  // Google Analytics Opt-Out
-  function gaOptOut() {
-    document.cookie = "ga-disable-G-S6K5V46G2E=true; path=/; expires=Fri, 31 Dec 2099 23:59:59 GMT";
-    alert("Google Analytics wurde deaktiviert.");
-  }
-
-  // Prüfung, ob Opt-Out-Cookie gesetzt ist
-  if (document.cookie.indexOf("ga-disable-G-S6K5V46G2E=true") > -1) {
-    window['ga-disable-G-S6K5V46G2E'] = true;
-  }
-</script>
-
-
 
 <body>
 
