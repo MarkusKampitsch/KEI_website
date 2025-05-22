@@ -6,6 +6,30 @@
   <title>Markus Kampitsch – Hydrogen Technology Consultant | KEI GmbH</title>
   <link rel="stylesheet" href="style.css">
 
+  <!-- Google Analytics 4 – DSGVO-konform mit IP-Anonymisierung -->
+
+<script>
+
+  function loadAnalytics() {
+    if (window.gaInitialized) return; // Mehrfachladen verhindern
+    window.gaInitialized = true;
+
+    const gtagScript = document.createElement('script');
+    gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-S6K5V46G2E';
+    gtagScript.async = true;
+    document.head.appendChild(gtagScript);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag; // global verfügbar machen
+
+    gtag('js', new Date());
+    gtag('config', 'G-S6K5V46G2E', {
+      'anonymize_ip': true
+    });
+  }
+
+</script>
 
   <script type="application/ld+json">
     {
@@ -218,6 +242,45 @@
       }).mount();
     });
   </script>
+
+<div id="cookie-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  z-index: 1000;">
+  Wir verwenden Google Analytics (mit IP-Anonymisierung), um das Nutzerverhalten auf dieser Website besser zu verstehen. Ihre Daten werden nur nach Ihrer Einwilligung anonym erfasst.
+  <button onclick="acceptAnalytics()" style="margin-left: 1rem; background: #4CAF50; color: white; border: none; padding: 0.4rem 0.8rem; cursor: pointer;">OK</button>
+  <button onclick="declineAnalytics()" style="margin-left: 0.5rem; background: #ccc; color: black; border: none; padding: 0.4rem 0.8rem; cursor: pointer;">Ablehnen</button>
+</div>
+
+<script>
+  const banner = document.getElementById('cookie-banner');
+  const consent = localStorage.getItem('analytics_consent');
+
+  if (consent === 'accepted') {
+    loadAnalytics();
+    banner.style.display = 'none';
+  } else if (consent === 'declined') {
+    banner.style.display = 'none';
+  }
+
+  function acceptAnalytics() {
+    localStorage.setItem('analytics_consent', 'accepted');
+    banner.style.display = 'none';
+    loadAnalytics();
+  }
+
+  function declineAnalytics() {
+    localStorage.setItem('analytics_consent', 'declined');
+    banner.style.display = 'none';
+  }
+</script>
 
 
 
